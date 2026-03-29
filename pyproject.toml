@@ -1,12 +1,18 @@
 [project]
 name = "grab-yt-mp3"
-version = "0.1.0"
+version = "1.0.0"
 description = "A simple but powerful interactive command-line tool to search and download high-quality MP3s from YouTube Music."
 authors = [{ name = "Sahil", email = "sahilmtayade@gmail.com" }]
 readme = "README.md"
 requires-python = ">=3.14"
 license = { text = "MIT" }
 keywords = ["youtube", "mp3", "download", "music", "cli"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 dependencies = [
     "rich>=14.3.3",
     "yt-dlp>=2026.3.17",
