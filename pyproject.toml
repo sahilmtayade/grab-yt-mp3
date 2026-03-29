@@ -1,0 +1,41 @@
+[project]
+name = "grab-yt-mp3"
+version = "0.1.0"
+description = "A simple but powerful interactive command-line tool to search and download high-quality MP3s from YouTube Music."
+authors = [{ name = "Sahil", email = "sahilmtayade@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.14"
+license = { text = "MIT" }
+keywords = ["youtube", "mp3", "download", "music", "cli"]
+dependencies = [
+    "rich>=14.3.3",
+    "yt-dlp>=2026.3.17",
+    "ytmusicapi>=1.11.5",
+]
+
+
+[dependency-groups]
+dev = [
+    "ruff",  # Linter/Formatter
+    "ty",  # Astral's Type Checker
+    "pytest",
+    "pre-commit",
+]
+
+[project.scripts]
+# Format is "package.module:function"
+ytdl = "grab_yt_mp3.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.ruff]
+line-length = 100
+exclude = [".venv", "__pycache__", "build", "dist"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC", "W", "N", "SIM", "TID"]
+ignore = ["E501"]
+unfixable = ["F401"]
