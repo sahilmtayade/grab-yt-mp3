@@ -1,5 +1,9 @@
 # grab-yt-mp3
 
+[![PyPI version](https://badge.fury.io/py/grab-yt-mp3.svg)](https://pypi.org/project/grab-yt-mp3/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/grab-yt-mp3.svg)](https://pypi.org/project/grab-yt-mp3/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A beautiful interactive command-line tool to search and download high-quality MP3s from YouTube Music directly to your local machine.
 
 ## Features
@@ -24,7 +28,7 @@ _(Note: Requires `ffmpeg` to be installed and available in your system's PATH.)_
 
 ### Using `uv` (Recommended)
 
-**To install from PyPI (Once published):**
+**To install from PyPI:**
 
 ```bash
 uv tool install grab-yt-mp3
@@ -37,6 +41,12 @@ uv tool install .
 ```
 
 ### Using `pip`
+
+```bash
+pip install grab-yt-mp3
+```
+
+**To install locally for development:**
 
 ```bash
 pip install -e .
